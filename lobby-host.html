@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SSM - Lobby</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top header-bar" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header h-100">
+                <div class="side-menu middle">
+                    <a id="menu-toggle" class="icon">
+                        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true">
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <span class="center text-center page-title middle max-w-80">
+                Hosting Match...
+            </span>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <div class="search-menu middle max-w-10">
+                    <span class="glyphicon glyphicon-search">
+                    </span>
+                </div>
+            </ul>
+        </nav>
+        
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" class="bg-lightgrey">
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#friends"><span class="glyphicon glyphicon-heart"></span> Friends</a>
+                    <ul id="friends" class="collapse">
+                        <li>
+                            <a class="friend-name">Nanner <img src="img/online.png"></img>
+                                <button class="btn btn-default unfriend-btn">Unfriend</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="friend-name">Alastrina <img src="img/online.png"></img>
+                                <button class="btn btn-default unfriend-btn">Unfriend</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="friend-name">Don Lawride <img src="img/online.png"></img>
+                                <button class="btn btn-default unfriend-btn">Unfriend</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="friend-name">Zeroing <img src="img/offline.png"></img>
+                                <button class="btn btn-default unfriend-btn">Unfriend</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="friend-name">DevM <img src="img/offline.png"></img>
+                                <button class="btn btn-default unfriend-btn">Unfriend</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="friend-name">Pitt <img src="img/offline.png"></img>
+                                <button class="btn btn-default unfriend-btn">Unfriend</button>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#blocked"><span class="glyphicon glyphicon-ban-circle"></span> Blocked</a>
+                    <ul id="blocked" class="collapse">
+                        <li>
+                            <a class="friend-name">Tugasnake
+                                <button class="btn btn-default unfriend-btn">Unblock</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="friend-name">Socrastes
+                                <button class="btn btn-default unfriend-btn">Unblock</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="friend-name">PCoelho2015
+                                <button class="btn btn-default unfriend-btn">Unblock</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="friend-name">Haxor
+                                <button class="btn btn-default unfriend-btn">Unblock</button>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#notifications"><span class="glyphicon glyphicon-envelope"></span> Notifications(2)</a>
+                    <ul id="notifications" class="collapse">
+                        <li>
+                            <a class="notification-msg">Match Invite By Alastrina
+                                <button class="btn btn-default unfriend-btn">Dismiss</button>
+                                <button class="btn btn-default f-right">Accept</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="notification-msg">Friend Invite By Popeye21
+                                <button class="btn btn-default unfriend-btn">Dismiss</button>
+                                <button class="btn btn-default f-right">Accept</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="notification-msg">'Noobs Tourney' has started
+                                <button class="btn btn-default unfriend-btn">Dismiss</button>
+                                <button class="btn btn-default f-right">Join</button>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-gear fa-lg"></i> Edit Match Settings</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-times-circle fa-lg"></i> Cancel Lobby</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <div id="content-wrapper" class="lobby-list">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="bg-white row last-row">
+                        <div class="col-lg-12">
+                            <div class="lobby-entry">
+                                <div class="row">
+                                    <span class="lobby-type">Team Battle</span>
+                                    <span class="lobby-host">Host: jocamar</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <img class="map-preview center" src="img/map.jpg"></img>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <div class="row name-rank">
+                                            <div class="col-xs-12">
+                                                <span class="lobby-name"><b>lobby name here</b></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <span class="lobby-rank"><i class="fa fa-shield"></i> 1365</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <span class="lobby-rank">Public Lobby</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <span class="lobby-p-count">2/4</span>
+                                    </div>
+                                </div>
+                                <div class="row ssm-content-box player-names-lobby center">
+                                    <h1 class="ssm-content-box-title">
+                                        <span>Players</span>
+                                    </h1>
+                                    <div class="col-xs-12">
+                                        <div class="row lobby-player first-player">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-xs-7">
+                                                       <h5><b>jocamar</b> <i class="fa fa-check fa-lg"></i></h5>
+                                                       <h6>Rank: 1345 - EU</h6>
+                                                   </div>
+                                                   <div class="col-xs-5">
+                                                       <span class="f-right team-select">
+                                                            <i class="fa fa-caret-down"></i> Team 1
+                                                       </span>
+                                                   </div>
+                                                </div>
+                                                <div class="row lobby-player-actions">
+                                                   <button class="btn btn-default player-actions-btn"><i class="fa fa-times fa-lg"></i> Unready</button>
+                                               </div>
+                                           </div>
+                                            
+                                        </div>
+                                        <div class="row lobby-player">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-xs-7">
+                                                       <h5><b>xxXSmasher360Xxx</b> <i class="fa fa-times fa-lg"></i></h5>
+                                                       <h6>Rank: 1345 - EU</h6>
+                                                   </div>
+                                                   <div class="col-xs-5">
+                                                       <span class="f-right team-select">
+                                                            <i class="fa fa-caret-down"></i> Team 2
+                                                       </span>
+                                                   </div>
+                                                </div>
+                                                
+                                               <div class="row lobby-player-actions">
+                                                   <button class="btn btn-default player-actions-btn"><i class="fa fa-plus fa-lg"></i> Friend</button>
+                                                   <button class="btn btn-default player-actions-btn"><i class="fa fa-ban fa-lg"></i>Block</button>
+                                                   <button class="btn btn-default player-actions-btn"><i class="fa fa-gavel fa-lg"></i> Kick</button>
+                                               </div>
+                                           </div>
+                                            
+                                        </div>
+                                        <div class="row lobby-player">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-xs-7">
+                                                       <h5><b>Open</b></h5>
+                                                       <h6>Rank: --</h6>
+                                                    </div>
+                                                    <div class="col-xs-5">
+                                                    </div>
+                                                </div>
+                                                <div class="row lobby-player-actions">
+                                                   <button class="btn btn-default player-actions-btn"><i class="fa fa-lock fa-lg"></i> Lock</button>
+                                                </div>
+                                           </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-xs-7">
+                                                       <h5><b>Open</b></h5>
+                                                       <h6>Rank: --</h6>
+                                                    </div>
+                                                    <div class="col-xs-5">
+                                                    </div>
+                                                </div>
+                                                <div class="row lobby-player-actions">
+                                                   <button class="btn btn-default player-actions-btn"><i class="fa fa-lock fa-lg"></i> Lock</button>
+                                                </div>
+                                           </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ssm-content-box player-names-lobby center">
+                                    <h1 class="ssm-content-box-title">
+                                        <span>Settings</span>
+                                    </h1>
+                                    <div class="col-xs-12">
+                                        <div>
+                                           <h5>Stage: Final Destination</h5>
+                                        </div>
+                                        <div class="match-setting">
+                                           <h5>Game Mode: Team Battle</h5>
+                                        </div>
+                                        <div class="match-setting">
+                                           <h5>Win Condition: Stock</h5>
+                                        </div>
+                                        <div class="match-setting">
+                                           <h5>Stock Limit: 5</h5>
+                                        </div>
+                                        <div class="match-setting">
+                                           <h5>Items Allowed: Yes</h5>
+                                        </div>
+                                        <div class="match-setting">
+                                           <h5>Friendly Fire: Active</h5>
+                                        </div>
+                                        <div class="match-setting">
+                                           <h5>Custom Chars Allowed: Yes</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row ssm-content-box chat-lobby center">
+                                    <h1 class="ssm-content-box-title">
+                                        <span>Chat</span>
+                                    </h1>
+                                    <div class="col-xs-12">
+                                    </div>
+                                </div>
+                                
+                                <div class="row chat-box">
+                                    <div class="col-xs-9">
+                                        <div class="form-group">
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <button class="btn btn-default player-actions-btn"><i class="fa fa-comment"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                </div>
+                
+                <!-- /.row -->
+            </div>
+            
+            <div class="create-lobby">
+                <span class="create-lobby-actions center middle">
+                        <button class="btn btn-default footer-btn">Start Match</button>
+                        <button class="btn btn-default footer-btn">Cancel Lobby</button>
+                </span>
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Menu Toggle Script -->
+    <script>
+    var wrapper = $("#wrapper");
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        wrapper.toggleClass("toggled");
+        
+        if($('#content-wrapper').width() != $(window).width()) {
+            console.log("hi");
+            $('.create-lobby').width(4*$(window).width());
+        }
+    });
+    
+    var wWidth = wrapper.width();
+    wrapper.on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
+                function(e) {
+                    if(Math.abs(wWidth - wrapper.width()) > 20) {
+                        console.log("w: " + wWidth + " cw: " + wrapper.width());
+                        $('.create-lobby').width(3*$(window).width()+$('#content-wrapper').width());
+                    }
+                        
+                    wWidth = wrapper.width();
+            });
+    
+    $('.create-lobby').width(3*$(window).width()+$('#content-wrapper').width());
+    
+    $(window).resize(function() {
+        if(!wrapper.hasClass("toggled"))
+            $('.create-lobby').width(3*$(window).width() + $('#content-wrapper').width());
+        else $('.create-lobby').width(4*$(window).width());
+            
+    });
+    
+    $("#toggle1").click(function(e) {
+        e.preventDefault();
+        $("#upi1").toggleClass("hidden");
+        $("#upt1").toggleClass("hidden");
+        $("#downi1").toggleClass("hidden");
+        $("#downt1").toggleClass("hidden");
+    });
+    
+    $("#toggle2").click(function(e) {
+        e.preventDefault();
+        $("#upi2").toggleClass("hidden");
+        $("#upt2").toggleClass("hidden");
+        $("#downi2").toggleClass("hidden");
+        $("#downt2").toggleClass("hidden");
+    });
+    </script>
+
+</body>
+
+</html>

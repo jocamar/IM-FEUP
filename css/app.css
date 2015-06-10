@@ -1,0 +1,358 @@
+ul {
+	list-style-type: none;
+}
+
+.no-margin {
+	margin: 0px;
+}
+
+.max-w-10 {
+	max-width: 10%;
+}
+
+.max-w-20 {
+	max-width: 20%;
+}
+
+.max-w-40 {
+	max-width: 40%;
+}
+
+.max-w-50 {
+	max-width: 50%;
+}
+
+.max-w-80 {
+	max-width: 80%;
+}
+
+.max-h-100 {
+	max-height: 100%;
+}
+
+.min-h-100 {
+	min-height: 100%;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.right {
+	display: block;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-middle {
+	vertical-align: middle;
+}
+
+.middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bg-grey {
+	background-color: #555;
+}
+
+.bg-lightgrey {
+	background-color: #888;
+}
+
+.bg-white {
+	background-color: white;
+}
+
+.h-100-vh {
+	height: 100vh;
+}
+
+.login-form {
+	margin-bottom: 30px;
+}
+
+.login-form > input {
+	margin-bottom: 20px;
+}
+
+.login-title {
+	margin-bottom: 40px;
+	color: #000;
+}
+
+.register-btn {
+	margin-top: 30px;
+}
+
+.side-menu {
+	font-size: 25pt;
+	color: white;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+.search-menu {
+	font-size: 25pt;
+	color: white;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+
+.page-title {
+	color: white;
+	font-size: 14pt;
+}
+
+.header-bar {
+	height: 50px;
+}
+
+.navbar-header {
+	float: left;
+}
+
+.navbar-right {
+	float: right !important;
+	margin-right: -15px;
+}
+
+.icon {
+	color: inherit;
+}
+
+#sidebar-wrapper {
+	background-color: #888 !important;
+	color: black;
+}
+
+.sidebar-nav > li {
+	margin-top: 10px;
+	color: black;
+}
+
+.sidebar-nav ul {
+	padding-left: 0px;
+}
+
+.sidebar-nav li a {
+	color: black;
+	font-size: 13pt;
+}
+
+.friend-name > img {
+	margin: 5px;
+	width: 10px;
+	height: auto;
+}
+
+.sidebar-nav > li > a > span , i {
+	margin-right: 10px;
+	font-size: 16pt;
+}
+
+.lobby-entry {
+	border-bottom: 1px solid;
+	border-color: black;
+	padding: 5px;
+}
+
+.lobby-list {
+	padding: 0px !important;
+}
+
+.lobby-type {
+	float: left;
+}
+
+.lobby-host {
+	float: right;
+}
+
+.map-preview {
+	margin-top: 15px;
+	max-width:100px;
+    max-height:100px;
+    width: 100%;
+    height: auto;
+	min-height: 35px;
+	min-width: 35px;
+}
+
+.lobby-p-count {
+	margin-top: 15px;
+	float: right;
+}
+
+.more-info {
+	margin-top:20px;
+	float: right;
+}
+
+.name-rank {
+	margin-top: 10px;
+}
+
+.create-lobby {
+	position: fixed;
+	bottom: 0px;
+	right: -150%;
+	background-color: orange;
+	width: 400%;
+	height: 70px;
+}
+
+.lobby-name {
+	font-size: 14pt;
+}
+
+.join-btn {
+	float: right;
+	margin-top: 10px;
+	margin-right: 20%;
+	width: 100px;
+}
+
+.hidden {
+	display: none;
+}
+
+.player-names {
+	margin-top: 30px;
+	width: 90%;
+}
+
+.lobby-settings {
+	margin-top: 30px;
+	width: 90%;
+}
+
+.ssm-content-box {
+	border: 1px solid;
+	border-color: black;
+	padding: 0px 0px 20px 0px;
+}
+
+.ssm-content-box .ssm-content-box-title {
+    text-align: center;
+    margin-top: -10px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.ssm-content-box .ssm-content-box-title span {
+	padding-left: 10px;
+	padding-right: 10px;
+    background-color: white;
+}
+
+.player-info {
+	margin-top: 20px;
+}
+
+.last-row {
+	margin-bottom: 70px;
+}
+
+.unfriend-btn {
+	padding: 3px;
+	float: right;
+	margin-right: 25px;
+	margin-top: 5px;
+	height: 30px;
+}
+
+.notification-msg {
+	font-size: 10pt !important;
+}
+
+.f-right {
+	margin-top: 5px;
+	margin-right: 5px;
+	float: right;
+	padding: 3px;
+	height: 30px;
+}
+
+.create-lobby-actions {
+	width: 264px;
+}
+
+.footer-btn {
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 120px;
+	display: inline-block;
+}
+
+.choose-lobby-settings {
+	margin: 30px;
+}
+
+.lobby-player {
+	border-bottom: 1px #000 solid;
+}
+
+.player-names-lobby {
+	padding: 0px;
+	margin-top: 30px;
+}
+
+.first-player {
+	margin-top: -20px;
+}
+
+.team-select {
+	font-size: 10pt;
+}
+.team-select i {
+	margin-right: 5px;
+}
+
+.lobby-player-actions {
+	padding: 0px 10px 5px 10px;
+}
+
+.player-actions-btn {
+	max-width: 150px;
+	width: 30%;
+	margin-right: 5px;
+	font-size: 8pt;
+	padding-left: 5px;
+}
+
+.player-actions-btn i {
+	margin-right: 5px;
+}
+
+.chat-lobby {
+	margin-top: 30px;
+	height: 300px;
+}
+
+.chat-box {
+	margin-top: 20px;
+}
+
+.chat-box button {
+	width: 100%;
+	height: 70px;
+	font-size: 25pt;
+}
+
+.chat-box button i {
+	margin-right: 0px;
+}
