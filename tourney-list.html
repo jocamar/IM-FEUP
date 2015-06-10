@@ -757,17 +757,18 @@
         wrapper.toggleClass("toggled");
         
         if($('#content-wrapper').width() != $(window).width()) {
-            console.log("hi");
+            console.log(4*$(window).width());
             $('.create-lobby').width(4*$(window).width());
-        }
+        };
     });
     
     var wWidth = wrapper.width();
     wrapper.on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
                 function(e) {
                     if(Math.abs(wWidth - wrapper.width()) > 20) {
-                        console.log("w: " + wWidth + " cw: " + wrapper.width());
-                        $('.create-lobby').width(3*$(window).width()+$('#content-wrapper').width());
+                        console.log("w: " + wWidth + " cw: " + wrapper.width() + " ww: " + $(window).width() + " cww: " + $('#content-wrapper').width());
+                        $('.create-lobby').width(3*$(window).width()+wrapper.width());
+                        console.log(3*$(window).width()+wrapper.width());
                     }
                         
                     wWidth = wrapper.width();

@@ -2,6 +2,16 @@ ul {
 	list-style-type: none;
 }
 
+a:hover {
+	text-decoration: none;
+    color: orange;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
 .no-margin {
 	margin: 0px;
 }
@@ -365,8 +375,17 @@ ul {
 }
 
 .nav-tabs {
+		font-weight: bold;
 		text-align: center;
 	}
+	
+.nav-tabs .active a {
+	color: black;
+}
+
+.nav-tabs li a {
+	color: white;
+}
 	
 @media(max-width:872px) {
 	
