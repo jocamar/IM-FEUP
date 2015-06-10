@@ -163,9 +163,9 @@
         <!-- /#sidebar-wrapper -->
         <div role="tabpanel">
         <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active" style="width:25%;"><a href="#coming" aria-controls="coming" role="tab" data-toggle="tab">Coming Tourneys</a></li>
-            <li role="presentation" style="width:25%;"><a href="#inprogress" aria-controls="inprogress" role="tab" data-toggle="tab">In Progress</a></li>
-            <li role="presentation" style="width:25%;"><a href="#mytourneys" aria-controls="mytourneys" role="tab" data-toggle="tab">My Tourneys</a></li>
+            <li role="presentation" class="active" style="width:33%;"><a href="#coming" aria-controls="coming" role="tab" data-toggle="tab">Tourneys</a></li>
+            <li role="presentation" style="width:33%;"><a href="#inprogress" aria-controls="inprogress" role="tab" data-toggle="tab">In Progress</a></li>
+            <li role="presentation" style="width:33%;"><a href="#mytourneys" aria-controls="mytourneys" role="tab" data-toggle="tab">My Tourneys</a></li>
         </ul>
             <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="coming">
@@ -260,7 +260,7 @@
                                 <div class="row">
                                     <div class="col-xs-8">
                                         <button class="btn btn-default join-btn">Join</button>
-                                        <button class="btn btn-default join-btn">Subscribe</button>
+                                        <button class="btn btn-default subscribe-btn">Subscribe</button>
                                     </div>
                                     <div class="col-xs-4">
                                         <div class="more-info">
@@ -363,7 +363,7 @@
                                 <div class="row">
                                     <div class="col-xs-8">
                                         <button class="btn btn-default join-btn">Join</button>
-                                        <button class="btn btn-default join-btn">Subscribe</button>
+                                        <button class="btn btn-default subscribe-btn">Subscribe</button>
                                     </div>
                                     <div class="col-xs-4">
                                         <div class="more-info">
@@ -392,7 +392,7 @@
 </div>
 
 <!-- In Progress Tab -->
-<div role="tabpanel" class="tab-pane active" id="inprogress">
+<div role="tabpanel" class="tab-pane" id="inprogress">
     
     <div id="content-wrapper" class="lobby-list">
 
@@ -400,7 +400,7 @@
 
                 <!-- Page Heading -->
                 
-                <div class="bg-white row">
+                <div class="bg-white row last-row">
                         <div class="col-lg-12">
                             <div class="lobby-entry">
                                 <div class="row">
@@ -427,7 +427,7 @@
                                         <span class="lobby-p-count">45/64</span>
                                     </div>
                                 </div>
-                                    <div id="info1" class="collapse">
+                                    <div id="info3" class="collapse">
                                         <div class="row ssm-content-box player-names center">
                                             <h1 class="ssm-content-box-title">
                                                 <span>Players</span>
@@ -488,11 +488,11 @@
                                     </div>
                                     <div class="col-xs-4">
                                         <div class="more-info">
-                                            <a id="toggle1" data-toggle="collapse" data-target="#info1">
-                                                <span id="upi1" class="glyphicon glyphicon-menu-down"></span>
-                                                <span id="upt1">More Info</span>
-                                                <span id="downi1" class="glyphicon glyphicon-menu-up hidden"></span>
-                                                <span id="downt1" class="hidden">Less Info</span>
+                                            <a id="toggle3" data-toggle="collapse" data-target="#info3">
+                                                <span id="upi3" class="glyphicon glyphicon-menu-down"></span>
+                                                <span id="upt3">More Info</span>
+                                                <span id="downi3" class="glyphicon glyphicon-menu-up hidden"></span>
+                                                <span id="downt3" class="hidden">Less Info</span>
                                             </a>
                                         </div>
                                     </div>
@@ -515,7 +515,7 @@
     
 </div>
 <!-- My Tourneys Tab -->
-<div role="tabpanel" class="tab-pane active" id="mytourneys">
+<div role="tabpanel" class="tab-pane" id="mytourneys">
      <div id="content-wrapper" class="lobby-list">
 
             <div class="container-fluid">
@@ -549,7 +549,7 @@
                                         <span class="lobby-p-count">45/64</span>
                                     </div>
                                 </div>
-                                    <div id="info1" class="collapse">
+                                    <div id="info4" class="collapse">
                                         <div class="row ssm-content-box player-names center">
                                             <h1 class="ssm-content-box-title">
                                                 <span>Players</span>
@@ -610,11 +610,11 @@
                                     </div>
                                     <div class="col-xs-4">
                                         <div class="more-info">
-                                            <a id="toggle1" data-toggle="collapse" data-target="#info1">
-                                                <span id="upi1" class="glyphicon glyphicon-menu-down"></span>
-                                                <span id="upt1">More Info</span>
-                                                <span id="downi1" class="glyphicon glyphicon-menu-up hidden"></span>
-                                                <span id="downt1" class="hidden">Less Info</span>
+                                            <a id="toggle4" data-toggle="collapse" data-target="#info4">
+                                                <span id="upi4" class="glyphicon glyphicon-menu-down"></span>
+                                                <span id="upt4">More Info</span>
+                                                <span id="downi4" class="glyphicon glyphicon-menu-up hidden"></span>
+                                                <span id="downt4" class="hidden">Less Info</span>
                                             </a>
                                         </div>
                                     </div>
@@ -651,7 +651,7 @@
                                         <span class="lobby-p-count">45/64</span>
                                     </div>
                                 </div>
-                                    <div id="info2" class="collapse">
+                                    <div id="info5" class="collapse">
                                         <div class="row ssm-content-box player-names center">
                                             <h1 class="ssm-content-box-title">
                                                 <span>Players</span>
@@ -709,15 +709,15 @@
                                 <div class="row">
                                     <div class="col-xs-8">
                                         <button class="btn btn-default join-btn">Quit</button>
-                                        <button class="btn btn-default join-btn">Unsubscribe</button>
+                                        <button class="btn btn-default subscribe-btn">Unsubscribe</button>
                                     </div>
                                     <div class="col-xs-4">
                                         <div class="more-info">
-                                            <a id="toggle2" data-toggle="collapse" data-target="#info2">
-                                                <span id="upi2" class="glyphicon glyphicon-menu-down"></span>
-                                                <span id="upt2">More Info</span>
-                                                <span id="downi2" class="glyphicon glyphicon-menu-up hidden"></span>
-                                                <span id="downt2" class="hidden">Less Info</span>
+                                            <a id="toggle5" data-toggle="collapse" data-target="#info5">
+                                                <span id="upi5" class="glyphicon glyphicon-menu-down"></span>
+                                                <span id="upt5">More Info</span>
+                                                <span id="downi5" class="glyphicon glyphicon-menu-up hidden"></span>
+                                                <span id="downt5" class="hidden">Less Info</span>
                                             </a>
                                         </div>
                                     </div>
@@ -796,6 +796,30 @@
         $("#upt2").toggleClass("hidden");
         $("#downi2").toggleClass("hidden");
         $("#downt2").toggleClass("hidden");
+    });
+    
+    $("#toggle3").click(function(e) {
+        e.preventDefault();
+        $("#upi3").toggleClass("hidden");
+        $("#upt3").toggleClass("hidden");
+        $("#downi3").toggleClass("hidden");
+        $("#downt3").toggleClass("hidden");
+    });
+    
+    $("#toggle4").click(function(e) {
+        e.preventDefault();
+        $("#upi4").toggleClass("hidden");
+        $("#upt4").toggleClass("hidden");
+        $("#downi4").toggleClass("hidden");
+        $("#downt4").toggleClass("hidden");
+    });
+    
+    $("#toggle5").click(function(e) {
+        e.preventDefault();
+        $("#upi5").toggleClass("hidden");
+        $("#upt5").toggleClass("hidden");
+        $("#downi5").toggleClass("hidden");
+        $("#downt5").toggleClass("hidden");
     });
     </script>
 

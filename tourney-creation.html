@@ -281,7 +281,7 @@
 
                 <div class="create-lobby">
                     <span class="create-lobby-actions center middle">
-                            <button class="btn btn-default footer-btn">Host</button>
+                            <button class="btn btn-default footer-btn">Organize</button>
                             <button class="btn btn-default footer-btn">Cancel</button>
                     </span>
                 </div>
@@ -329,22 +329,6 @@
                 $('.create-lobby').width(3*$(window).width() + $('#content-wrapper').width());
             else $('.create-lobby').width(4*$(window).width());
 
-        });
-
-        $("#toggle1").click(function(e) {
-            e.preventDefault();
-            $("#upi1").toggleClass("hidden");
-            $("#upt1").toggleClass("hidden");
-            $("#downi1").toggleClass("hidden");
-            $("#downt1").toggleClass("hidden");
-        });
-
-        $("#toggle2").click(function(e) {
-            e.preventDefault();
-            $("#upi2").toggleClass("hidden");
-            $("#upt2").toggleClass("hidden");
-            $("#downi2").toggleClass("hidden");
-            $("#downt2").toggleClass("hidden");
         });
 
         datepickr('#datepickr');

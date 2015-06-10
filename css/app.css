@@ -356,3 +356,56 @@ ul {
 .chat-box button i {
 	margin-right: 0px;
 }
+
+.subscribe-btn {
+	float: right;
+	margin-top: 10px;
+	margin-right: 5%;
+	width: 100px;
+}
+
+.nav-tabs {
+		text-align: center;
+	}
+	
+@media(max-width:872px) {
+	
+	.join-btn {
+		margin-right: 5%;
+	}
+}
+
+@media(max-width:480px) {
+	
+	.nav-tabs {
+		font-size: 2.5vw;
+	}
+	
+	.more-info {
+		font-size: 3.5vw;
+	}
+}
+
+@media(max-width:405px) {
+	.more-info {
+		margin-top: 70px;
+	}
+}
+
+/*@media(max-width:430px) {
+	.nav-tabs {
+		font-size: 8pt;
+	}
+}
+
+@media(max-width:380px) {
+	.nav-tabs {
+		font-size: 7pt;
+	}
+}
+
+@media(max-width:345px) {
+	.nav-tabs {
+		font-size: 6pt;
+	}
+}*/
