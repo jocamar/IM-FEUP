@@ -337,45 +337,43 @@
             <!-- /.container-fluid -->
         </div>
         <!-- /#page-content-wrapper -->
-        <div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Game Starting!</h4>
-      </div>
-      <div class="modal-body">
-        <p>To start the game, use the following codes to add the players</p>
-          <div class="container-fluid" style="border-style: solid;">
-              <p>0791-4550-0614</p>
-              <p>Nintendo Acc. Name: Don Lawride</p>
-
-          </div>
-          <div class="container-fluid" style="border-style: solid;">
-              <p>0791-4550-0614</p>
-              <p>Nintendo Acc. Name: Don Lawride</p>
-          </div>
-          <div class="container-fluid" style="border-style: solid;">
-              <p>0791-4550-0614</p>
-              <p>Nintendo Acc. Name: Don Lawride</p>
-          </div>
-          <div class="container-fluid" 	style="border-style: solid;">
-              <p>0791-4550-0614</p>
-              <p>Nintendo Acc. Name: Don Lawride</p>
-          </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
+        
     </div>
     <!-- /#wrapper -->
 
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-center" >Game Starting!</h4>
+          </div>
+          <div class="modal-body">
+            <p>To start the game, use the following codes to add the players:</p>
+              <div class="container-fluid" style="border-width: 1px 1px 0px 1px; border-style: solid;">
+                  <h4 class="text-center">0791-4550-0614</h4>
+                  <p class="text-center">Nintendo Acc. Name: Don Lawride</p>
+    
+              </div>
+              <div class="container-fluid" style="border-width: 1px 1px 0px 1px; border-style: solid;">
+                  <h4 class="text-center">0791-4550-0614</h4>
+                  <p class="text-center">Nintendo Acc. Name: Don Lawride</p>
+              </div>
+              <div class="container-fluid" style="border-width: 1px 1px 0px 1px; border-style: solid;">
+                  <h4 class="text-center">0791-4550-0614</h4>
+                  <p class="text-center">Nintendo Acc. Name: Don Lawride</p>
+              </div>
+              <div class="container-fluid" 	style="border-width: 1px 1px 1px 1px; border-style: solid;">
+                  <h4 class="text-center">0791-4550-0614</h4>
+                  <p class="text-center">Nintendo Acc. Name: Don Lawride</p>
+              </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -412,23 +410,7 @@
         if(!wrapper.hasClass("toggled"))
             $('.create-lobby').width(3*$(window).width() + $('#content-wrapper').width());
         else $('.create-lobby').width(4*$(window).width());
-            
-    });
-    
-    $("#toggle1").click(function(e) {
-        e.preventDefault();
-        $("#upi1").toggleClass("hidden");
-        $("#upt1").toggleClass("hidden");
-        $("#downi1").toggleClass("hidden");
-        $("#downt1").toggleClass("hidden");
-    });
-    
-    $("#toggle2").click(function(e) {
-        e.preventDefault();
-        $("#upi2").toggleClass("hidden");
-        $("#upt2").toggleClass("hidden");
-        $("#downi2").toggleClass("hidden");
-        $("#downt2").toggleClass("hidden");
+        console.log("hi2");
     });
     </script>
 
