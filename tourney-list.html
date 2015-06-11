@@ -163,13 +163,13 @@
             <!-- /#sidebar-wrapper -->
             <div role="tabpanel">
             <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active" style="width:33%;"><a href="#coming" aria-controls="coming" role="tab" data-toggle="tab">Tourneys</a></li>
-                <li role="presentation" style="width:33%;"><a href="#inprogress" aria-controls="inprogress" role="tab" data-toggle="tab">In Progress</a></li>
-                <li role="presentation" style="width:33%;"><a href="#mytourneys" aria-controls="mytourneys" role="tab" data-toggle="tab">My Tourneys</a></li>
+                <li id="coming" role="presentation" class="active" style="width:33%;"><a href="#coming-list" aria-controls="coming-list" role="tab" data-toggle="tab">Tourneys</a></li>
+                <li id="inprogress" role="presentation" style="width:33%;"><a href="#inprogress-list" aria-controls="inprogress-list" role="tab" data-toggle="tab">In Progress</a></li>
+                <li id="mytourneys" role="presentation" style="width:33%;"><a href="#mytourneys-list" aria-controls="mytourneys-list" role="tab" data-toggle="tab">My Tourneys</a></li>
             </ul>
 
                 <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="coming">
+            <div role="tabpanel" class="tab-pane active" id="coming-list">
             <div id="content-wrapper" class="lobby-list">
 
                 <div class="container-fluid">
@@ -388,7 +388,7 @@
     </div>
 
     <!-- In Progress Tab -->
-    <div role="tabpanel" class="tab-pane" id="inprogress">
+    <div role="tabpanel" class="tab-pane" id="inprogress-list">
 
         <div id="content-wrapper" class="lobby-list">
 
@@ -508,7 +508,7 @@
 
     </div>
     <!-- My Tourneys Tab -->
-    <div role="tabpanel" class="tab-pane" id="mytourneys">
+    <div role="tabpanel" class="tab-pane" id="mytourneys-list">
          <div id="content-wrapper" class="lobby-list">
 
                 <div class="container-fluid">
@@ -817,6 +817,25 @@
             $("#downi5").toggleClass("hidden");
             $("#downt5").toggleClass("hidden");
         });
+        
+        $.urlParam = function(name){
+            var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+            if (results==null){
+               return null;
+            }
+            else{
+               return results[1] || 0;
+            }
+        }
+        
+        if($.urlParam("tab") == "mytourneys") {
+            $('#coming').removeClass("active");
+            $('#inprogress').removeClass("active");
+            $('#mytourneys').addClass("active");
+            $('#coming-list').removeClass("active");
+            $('#inprogress-list').removeClass("active");
+            $('#mytourneys-list').addClass("active");
+        }
         </script>
 
     </body>

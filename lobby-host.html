@@ -61,7 +61,7 @@
         <div id="sidebar-wrapper" class="bg-lightgrey">
             <ul class="sidebar-nav">
                 <li>
-                    <a href="javascript:;" data-toggle="collapse" data-target="#friends"><span class="glyphicon glyphicon-heart"></span> Friends</a>
+                    <a id="friends-link" href="javascript:;" data-toggle="collapse" data-target="#friends"><span class="glyphicon glyphicon-heart"></span> Friends</a>
                     <ul id="friends" class="collapse">
                         <li>
                             <a class="friend-name">Nanner <img src="img/online.png"></img>
@@ -201,7 +201,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12">
-                                        <button style="margin-top: 10px" class="wisteria-flat-button center">Invite Friends</button>
+                                        <button id="invite" style="margin-top: 10px" class="wisteria-flat-button center">Invite Friends</button>
                                     </div>
                                 </div>
                                 <div class="row ssm-content-box player-names-lobby center">
@@ -405,7 +405,6 @@
         wrapper.toggleClass("toggled");
         
         if($('#content-wrapper').width() != $(window).width()) {
-            console.log("hi");
             $('.create-lobby').width(4*$(window).width());
         }
     });
@@ -428,6 +427,19 @@
             $('.create-lobby').width(3*$(window).width() + $('#content-wrapper').width());
         else $('.create-lobby').width(4*$(window).width());
         console.log("hi2");
+    });
+    
+    $('#invite').click(function(e) {
+        e.preventDefault();
+        if($('#content-wrapper').width() == $(window).width()) {
+            wrapper.toggleClass("toggled");
+        }
+       
+        $('#friends').addClass('in');
+        $('#friends').attr('aria-expanded','true');
+        $('#friends').attr('style','height: auto');
+        $('#friends-link').removeClass('collapsed');
+        $('#friends-link').attr('aria-expanded','true');
     });
     </script>
 

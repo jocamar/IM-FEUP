@@ -7,6 +7,15 @@ ul {
 	list-style-type: none;
 }
 
+.glyphicon-search {
+	font-size: 22pt;
+	margin-top: 10px;
+}
+
+.glyphicon-menu-hamburger {
+	font-size: 22pt;
+}
+
 a:hover {
 	text-decoration: none;
     color: orange;
@@ -136,6 +145,10 @@ a {
 	font-family: smashFont;
 }
 
+.navbar {
+	box-shadow: 0px 1px 5px #000;
+}
+
 .header-bar {
 	height: 50px;
 }
@@ -200,10 +213,12 @@ a {
 
 .lobby-type {
 	float: left;
+	font-size: 8pt;
 }
 
 .lobby-host {
 	float: right;
+	font-size: 8pt;
 }
 
 .map-preview {
