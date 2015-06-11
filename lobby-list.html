@@ -400,7 +400,7 @@
                                         <span class="lobby-p-count">2/4</span>
                                     </div>
                                 </div>
-                                    <div id="info1" class="collapse">
+                                    <div id="info3" class="collapse">
                                         <div class="row ssm-content-box player-names center">
                                             <h1 class="ssm-content-box-title">
                                                 <span>Players</span>
@@ -461,11 +461,11 @@
                                     </div>
                                     <div class="col-xs-4 more-info-col">
                                         <div class="more-info">
-                                            <a id="toggle1" data-toggle="collapse" data-target="#info1">
-                                                <span id="upi1" class="glyphicon glyphicon-menu-down"></span>
-                                                <span id="upt1">More Info</span>
-                                                <span id="downi1" class="glyphicon glyphicon-menu-up hidden"></span>
-                                                <span id="downt1" class="hidden">Less Info</span>
+                                            <a id="toggle3" data-toggle="collapse" data-target="#info3">
+                                                <span id="upi3" class="glyphicon glyphicon-menu-down"></span>
+                                                <span id="upt3">More Info</span>
+                                                <span id="downi3" class="glyphicon glyphicon-menu-up hidden"></span>
+                                                <span id="downt3" class="hidden">Less Info</span>
                                             </a>
                                         </div>
                                     </div>
@@ -501,7 +501,7 @@
                                         <span class="lobby-p-count">2/4</span>
                                     </div>
                                 </div>
-                                    <div id="info1" class="collapse">
+                                    <div id="info4" class="collapse">
                                         <div class="row ssm-content-box player-names center">
                                             <h1 class="ssm-content-box-title">
                                                 <span>Players</span>
@@ -562,11 +562,11 @@
                                     </div>
                                     <div class="col-xs-4 more-info-col">
                                         <div class="more-info">
-                                            <a id="toggle1" data-toggle="collapse" data-target="#info1">
-                                                <span id="upi1" class="glyphicon glyphicon-menu-down"></span>
-                                                <span id="upt1">More Info</span>
-                                                <span id="downi1" class="glyphicon glyphicon-menu-up hidden"></span>
-                                                <span id="downt1" class="hidden">Less Info</span>
+                                            <a id="toggle4" data-toggle="collapse" data-target="#info4">
+                                                <span id="upi4" class="glyphicon glyphicon-menu-down"></span>
+                                                <span id="upt4">More Info</span>
+                                                <span id="downi4" class="glyphicon glyphicon-menu-up hidden"></span>
+                                                <span id="downt4" class="hidden">Less Info</span>
                                             </a>
                                         </div>
                                     </div>
@@ -642,6 +642,23 @@
         $("#upt2").toggleClass("hidden");
         $("#downi2").toggleClass("hidden");
         $("#downt2").toggleClass("hidden");
+    });
+    
+        
+    $("#toggle3").click(function(e) {
+        e.preventDefault();
+        $("#upi3").toggleClass("hidden");
+        $("#upt3").toggleClass("hidden");
+        $("#downi3").toggleClass("hidden");
+        $("#downt3").toggleClass("hidden");
+    });
+    
+    $("#toggle4").click(function(e) {
+        e.preventDefault();
+        $("#upi4").toggleClass("hidden");
+        $("#upt4").toggleClass("hidden");
+        $("#downi4").toggleClass("hidden");
+        $("#downt4").toggleClass("hidden");
     });
     </script>
 
