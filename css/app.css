@@ -236,6 +236,7 @@ a {
 	background-color: orange;
 	width: 400%;
 	height: 70px;
+	z-index: 100;
 }
 
 .create-lobby button {
@@ -502,3 +503,17 @@ a {
  .modal-header {
 	 border-width: 0px;
  }
+ 
+ .scrollable-content {
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.team {
+	width: 120px !important;
+}
+
+.team .label {
+	width: 100px !important;
+	color: black;
+}
