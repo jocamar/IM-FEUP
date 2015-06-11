@@ -1,826 +1,826 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <title>SSM - Tourney List</title>
+        <title>SSM - Tourney List</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/sb-admin.css" rel="stylesheet">
-    <link href="css/simple-sidebar.css" rel="stylesheet">
-    <link href="css/app.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/sb-admin.css" rel="stylesheet">
+        <link href="css/simple-sidebar.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <div id="wrapper">
-        
-        <nav class="navbar navbar-inverse navbar-fixed-top header-bar" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header h-100">
-                <div class="side-menu middle">
-                    <a id="menu-toggle" class="icon">
-                        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true">
+        <div id="wrapper">
+
+            <nav class="navbar navbar-inverse navbar-fixed-top header-bar" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header h-100">
+                    <div class="side-menu middle">
+                        <a id="menu-toggle" class="icon">
+                            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <span class="center text-center page-title middle max-w-80">
+                    Super Smash Matcher
+                </span>
+                <!-- Top Menu Items -->
+                <ul class="nav navbar-right top-nav">
+                    <div class="search-menu middle max-w-10">
+                        <span class="glyphicon glyphicon-search">
                         </span>
-                    </a>
-                </div>
-            </div>
-            <span class="center text-center page-title middle max-w-80">
-                Super Smash Matcher
-            </span>
-            <!-- Top Menu Items -->
-            <ul class="nav navbar-right top-nav">
-                <div class="search-menu middle max-w-10">
-                    <span class="glyphicon glyphicon-search">
-                    </span>
-                </div>
-            </ul>
-        </nav>
-        
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper" class="bg-lightgrey">
-            <ul class="sidebar-nav">
-                <li>
-                    <a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a>
-                </li>
-                <li>
-                    <a href="javascript:;" data-toggle="collapse" data-target="#friends"><span class="glyphicon glyphicon-heart"></span> Friends</a>
-                    <ul id="friends" class="collapse">
-                        <li>
-                            <a class="friend-name">Nanner <img src="img/online.png"></img>
-                                <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="friend-name">Alastrina <img src="img/online.png"></img>
-                                <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="friend-name">Don Lawride <img src="img/online.png"></img>
-                                <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="friend-name">Zeroing <img src="img/offline.png"></img>
-                                <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="friend-name">DevM <img src="img/offline.png"></img>
-                                <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="friend-name">Pitt <img src="img/offline.png"></img>
-                                <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:;" data-toggle="collapse" data-target="#blocked"><span class="glyphicon glyphicon-ban-circle"></span> Blocked</a>
-                    <ul id="blocked" class="collapse">
-                        <li>
-                            <a class="friend-name">Tugasnake
-                                <button class="wisteria-flat-button unfriend-btn">Unblock</button>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="friend-name">Socrastes
-                                <button class="wisteria-flat-button unfriend-btn">Unblock</button>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="friend-name">PCoelho2015
-                                <button class="wisteria-flat-button unfriend-btn">Unblock</button>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="friend-name">Haxor
-                                <button class="wisteria-flat-button unfriend-btn">Unblock</button>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-group fa-lg"></i> User List</a>
-                </li>
-                <li>
-                    <a href="#"><span class="glyphicon glyphicon-list"></span> Lobby List</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-trophy fa-lg"></i> Tournament List</a>
-                </li>
-                <li>
-                    <a href="javascript:;" data-toggle="collapse" data-target="#notifications"><span class="glyphicon glyphicon-envelope"></span> Notifications(2)</a>
-                    <ul id="notifications" class="collapse">
+                    </div>
+                </ul>
+            </nav>
+
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper" class="bg-lightgrey">
+                <ul class="sidebar-nav">
+                    <li>
+                        <a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#friends"><span class="glyphicon glyphicon-heart"></span> Friends</a>
+                        <ul id="friends" class="collapse">
+                            <li>
+                                <a class="friend-name">Nanner <img src="img/online.png"></img>
+                                    <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="friend-name">Alastrina <img src="img/online.png"></img>
+                                    <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="friend-name">Don Lawride <img src="img/online.png"></img>
+                                    <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="friend-name">Zeroing <img src="img/offline.png"></img>
+                                    <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="friend-name">DevM <img src="img/offline.png"></img>
+                                    <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="friend-name">Pitt <img src="img/offline.png"></img>
+                                    <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#blocked"><span class="glyphicon glyphicon-ban-circle"></span> Blocked</a>
+                        <ul id="blocked" class="collapse">
+                            <li>
+                                <a class="friend-name">Tugasnake
+                                    <button class="wisteria-flat-button unfriend-btn">Unblock</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="friend-name">Socrastes
+                                    <button class="wisteria-flat-button unfriend-btn">Unblock</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="friend-name">PCoelho2015
+                                    <button class="wisteria-flat-button unfriend-btn">Unblock</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="friend-name">Haxor
+                                    <button class="wisteria-flat-button unfriend-btn">Unblock</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-group fa-lg"></i> User List</a>
+                    </li>
+                    <li>
+                        <a href="lobby-list.html"><span class="glyphicon glyphicon-list"></span> Lobby List</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-trophy fa-lg"></i> Tournament List</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#notifications"><span class="glyphicon glyphicon-envelope"></span> Notifications(2)</a>
+                        <ul id="notifications" class="collapse">
                         <li>
                             <a class="notification-msg">Match Invite By Alastrina
                                 <button class="wisteria-flat-button unfriend-btn">Dismiss</button>
-                                <button class="wisteria-flat-button f-right">Accept</button>
+                                <button class="wisteria-flat-button f-right" onclick="location.href='lobby-host.html'">Accept</button>
                             </a>
                         </li>
                         <li>
                             <a class="notification-msg">Friend Invite By Popeye21
                                 <button class="wisteria-flat-button unfriend-btn">Dismiss</button>
-                                <button class="wisteria-flat-button f-right">Accept</button>
+                                <button class="wisteria-flat-button f-right" onclick="location.href='lobby-host.html'">Accept</button>
                             </a>
                         </li>
                         <li>
                             <a class="notification-msg">'Noobs Tourney' has started
                                 <button class="wisteria-flat-button unfriend-btn">Dismiss</button>
-                                <button class="wisteria-flat-button f-right">Join</button>
+                                <button class="wisteria-flat-button f-right" onclick="location.href='tourney-lobby.html'"> Join </button>
                             </a>
                         </li>
                     </ul>
-                </li>
-                <li>
-                    <a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a>
-                </li>
+                    </li>
+                    <li>
+                        <a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+            <div role="tabpanel">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active" style="width:33%;"><a href="#coming" aria-controls="coming" role="tab" data-toggle="tab">Tourneys</a></li>
+                <li role="presentation" style="width:33%;"><a href="#inprogress" aria-controls="inprogress" role="tab" data-toggle="tab">In Progress</a></li>
+                <li role="presentation" style="width:33%;"><a href="#mytourneys" aria-controls="mytourneys" role="tab" data-toggle="tab">My Tourneys</a></li>
             </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-        <div role="tabpanel">
-        <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active" style="width:33%;"><a href="#coming" aria-controls="coming" role="tab" data-toggle="tab">Tourneys</a></li>
-            <li role="presentation" style="width:33%;"><a href="#inprogress" aria-controls="inprogress" role="tab" data-toggle="tab">In Progress</a></li>
-            <li role="presentation" style="width:33%;"><a href="#mytourneys" aria-controls="mytourneys" role="tab" data-toggle="tab">My Tourneys</a></li>
-        </ul>
-            <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="coming">
+
+                <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="coming">
+            <div id="content-wrapper" class="lobby-list">
+
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+
+                    <div class="bg-white row">
+
+                    </div>
+
+                    <div class="row last-row">
+                            <div class="col-lg-6 col-xs-12 bg-white entry-border">
+                                <div class="lobby-entry">
+                                    <div class="row">
+                                        <span class="lobby-type">Periodic</span>
+                                        <span class="lobby-host">Organizer: jocamar</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-2">
+                                            <img class="map-preview center" src="img/trophee.ico"></img>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="row name-rank">
+                                                <div class="col-xs-12">
+                                                    <span class="lobby-name"><b>Tourney 4 fun</b></span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <span class="lobby-rank"><i class="fa fa-shield"></i> 1365</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="lobby-p-count">45/64</span>
+                                        </div>
+                                    </div>
+                                        <div id="info1" class="collapse">
+                                            <div class="row ssm-content-box player-names center">
+                                                <h1 class="ssm-content-box-title">
+                                                    <span>Players</span>
+                                                </h1>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <div>
+                                                       <h5><b>jocamar</b></h5>
+                                                       <h6>Rank: 1345 - EU</h6>
+                                                    </div>
+                                                    <div class="player-info">
+                                                       <h5><b>xxXSmasher360Xxx</b></h5>
+                                                       <h6>Rank: 1345 - EU</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <div>
+                                                       <h5><b>Open</b></h5>
+                                                       <h6>Rank: --</h6>
+                                                    </div>
+                                                    <div class="player-info">
+                                                       <h5><b>Open</b></h5>
+                                                       <h6>Rank: --</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row ssm-content-box lobby-settings center">
+                                                <h1 class="ssm-content-box-title">
+                                                    <span>Settings</span>
+                                                </h1>
+                                                <div class="col-xs-12">
+                                                    <div>
+                                                       <h5>Type: Periodic</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Style: Round Robin</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Win Condition: Stock</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Stock Limit: 5</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Items Allowed: Yes</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Friendly Fire: Active</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Custom Chars Allowed: Yes</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="row">
+                                        <div class="col-xs-8">
+                                            <button class="wisteria-flat-button join-btn" onclick="location.href='tourney-lobby.html'">Join</button>
+                                            <button class="wisteria-flat-button subscribe-btn">Subscribe</button>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="more-info">
+                                                <a id="toggle1" data-toggle="collapse" data-target="#info1">
+                                                    <span id="upi1" class="glyphicon glyphicon-menu-down"></span>
+                                                    <span id="upt1">More Info</span>
+                                                    <span id="downi1" class="glyphicon glyphicon-menu-up hidden"></span>
+                                                    <span id="downt1" class="hidden">Less Info</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6 col-xs-12 entry-border bg-white">
+                                <div class="lobby-entry">
+                                    <div class="row">
+                                        <span class="lobby-type">Single Event</span>
+                                        <span class="lobby-host">Organizer: jocamar</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-2">
+                                            <img class="map-preview center" src="img/trophee.ico"></img>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="row name-rank">
+                                                <div class="col-xs-12">
+                                                    <span class="lobby-name"><b>Tourney 4 fun</b></span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <span class="lobby-rank"><i class="fa fa-shield"></i> 1365</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="lobby-p-count">45/64</span>
+                                        </div>
+                                    </div>
+                                        <div id="info2" class="collapse">
+                                            <div class="row ssm-content-box player-names center">
+                                                <h1 class="ssm-content-box-title">
+                                                    <span>Players</span>
+                                                </h1>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <div>
+                                                       <h5><b>jocamar</b></h5>
+                                                       <h6>Rank: 1345 - EU</h6>
+                                                    </div>
+                                                    <div class="player-info">
+                                                       <h5><b>xxXSmasher360Xxx</b></h5>
+                                                       <h6>Rank: 1345 - EU</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <div>
+                                                       <h5><b>Open</b></h5>
+                                                       <h6>Rank: --</h6>
+                                                    </div>
+                                                    <div class="player-info">
+                                                       <h5><b>Open</b></h5>
+                                                       <h6>Rank: --</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row ssm-content-box lobby-settings center">
+                                                <h1 class="ssm-content-box-title">
+                                                    <span>Settings</span>
+                                                </h1>
+                                                <div class="col-xs-12">
+                                                    <div>
+                                                       <h5>Type: Single Event</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Style: Elimination</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Win Condition: Stock</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Stock Limit: 5</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Items Allowed: Yes</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Friendly Fire: Active</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Custom Chars Allowed: Yes</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="row">
+                                        <div class="col-xs-8">
+                                            <button class="wisteria-flat-button join-btn" onclick="location.href='tourney-lobby.html'">Join</button>
+                                            <button class="wisteria-flat-button subscribe-btn">Subscribe</button>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="more-info">
+                                                <a id="toggle2" data-toggle="collapse" data-target="#info2">
+                                                    <span id="upi2" class="glyphicon glyphicon-menu-down"></span>
+                                                    <span id="upt2">More Info</span>
+                                                    <span id="downi2" class="glyphicon glyphicon-menu-up hidden"></span>
+                                                    <span id="downt2" class="hidden">Less Info</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
+
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+    </div>
+
+    <!-- In Progress Tab -->
+    <div role="tabpanel" class="tab-pane" id="inprogress">
+
         <div id="content-wrapper" class="lobby-list">
 
-            <div class="container-fluid">
+                <div class="container-fluid">
 
-                <!-- Page Heading -->
-                
-                <div class="bg-white row">
-                        
+                    <!-- Page Heading -->
+
+                    <div class="row last-row">
+                            <div class="col-lg-6 col-xs-12 entry-border bg-white">
+                                <div class="lobby-entry">
+                                    <div class="row">
+                                        <span class="lobby-type">Periodic</span>
+                                        <span class="lobby-host">Organizer: jocamar</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-2">
+                                            <img class="map-preview center" src="img/trophee.ico"></img>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="row name-rank">
+                                                <div class="col-xs-12">
+                                                    <span class="lobby-name"><b>Tourney 4 fun</b></span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <span class="lobby-rank"><i class="fa fa-shield"></i> 1365</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="lobby-p-count">45/64</span>
+                                        </div>
+                                    </div>
+                                        <div id="info3" class="collapse">
+                                            <div class="row ssm-content-box player-names center">
+                                                <h1 class="ssm-content-box-title">
+                                                    <span>Players</span>
+                                                </h1>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <div>
+                                                       <h5><b>jocamar</b></h5>
+                                                       <h6>Rank: 1345 - EU</h6>
+                                                    </div>
+                                                    <div class="player-info">
+                                                       <h5><b>xxXSmasher360Xxx</b></h5>
+                                                       <h6>Rank: 1345 - EU</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <div>
+                                                       <h5><b>Open</b></h5>
+                                                       <h6>Rank: --</h6>
+                                                    </div>
+                                                    <div class="player-info">
+                                                       <h5><b>Open</b></h5>
+                                                       <h6>Rank: --</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row ssm-content-box lobby-settings center">
+                                                <h1 class="ssm-content-box-title">
+                                                    <span>Settings</span>
+                                                </h1>
+                                                <div class="col-xs-12">
+                                                    <div>
+                                                       <h5>Type: Periodic</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Style: Round Robin</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Win Condition: Stock</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Stock Limit: 5</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Items Allowed: Yes</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Friendly Fire: Active</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Custom Chars Allowed: Yes</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="row">
+                                        <div class="col-xs-8"><a href="tourney-lobby.html">
+                                            <button class="wisteria-flat-button join-btn">Enter Room</button></a>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="more-info">
+                                                <a id="toggle3" data-toggle="collapse" data-target="#info3">
+                                                    <span id="upi3" class="glyphicon glyphicon-menu-down"></span>
+                                                    <span id="upt3">More Info</span>
+                                                    <span id="downi3" class="glyphicon glyphicon-menu-up hidden"></span>
+                                                    <span id="downt3" class="hidden">Less Info</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
+
+
+                    <!-- /.row -->
                 </div>
-                
-                <div class="row last-row">
-                        <div class="col-lg-6 col-xs-12 bg-white entry-border">
-                            <div class="lobby-entry">
-                                <div class="row">
-                                    <span class="lobby-type">Periodic</span>
-                                    <span class="lobby-host">Organizer: jocamar</span>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-2">
-                                        <img class="map-preview center" src="img/trophee.ico"></img>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <div class="row name-rank">
-                                            <div class="col-xs-12">
-                                                <span class="lobby-name"><b>Tourney 4 fun</b></span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12">
-                                                <span class="lobby-rank"><i class="fa fa-shield"></i> 1365</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-2">
-                                        <span class="lobby-p-count">45/64</span>
-                                    </div>
-                                </div>
-                                    <div id="info1" class="collapse">
-                                        <div class="row ssm-content-box player-names center">
-                                            <h1 class="ssm-content-box-title">
-                                                <span>Players</span>
-                                            </h1>
-                                            <div class="col-xs-12 col-sm-6">
-                                                <div>
-                                                   <h5><b>jocamar</b></h5>
-                                                   <h6>Rank: 1345 - EU</h6>
-                                                </div>
-                                                <div class="player-info">
-                                                   <h5><b>xxXSmasher360Xxx</b></h5>
-                                                   <h6>Rank: 1345 - EU</h6>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6">
-                                                <div>
-                                                   <h5><b>Open</b></h5>
-                                                   <h6>Rank: --</h6>
-                                                </div>
-                                                <div class="player-info">
-                                                   <h5><b>Open</b></h5>
-                                                   <h6>Rank: --</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row ssm-content-box lobby-settings center">
-                                            <h1 class="ssm-content-box-title">
-                                                <span>Settings</span>
-                                            </h1>
-                                            <div class="col-xs-12">
-                                                <div>
-                                                   <h5>Type: Periodic</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Style: Round Robin</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Win Condition: Stock</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Stock Limit: 5</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Items Allowed: Yes</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Friendly Fire: Active</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Custom Chars Allowed: Yes</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <div class="row">
-                                    <div class="col-xs-8">
-                                        <button class="wisteria-flat-button join-btn">Join</button>
-                                        <button class="wisteria-flat-button subscribe-btn">Subscribe</button>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <div class="more-info">
-                                            <a id="toggle1" data-toggle="collapse" data-target="#info1">
-                                                <span id="upi1" class="glyphicon glyphicon-menu-down"></span>
-                                                <span id="upt1">More Info</span>
-                                                <span id="downi1" class="glyphicon glyphicon-menu-up hidden"></span>
-                                                <span id="downt1" class="hidden">Less Info</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-6 col-xs-12 entry-border bg-white">
-                            <div class="lobby-entry">
-                                <div class="row">
-                                    <span class="lobby-type">Single Event</span>
-                                    <span class="lobby-host">Organizer: jocamar</span>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-2">
-                                        <img class="map-preview center" src="img/trophee.ico"></img>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <div class="row name-rank">
-                                            <div class="col-xs-12">
-                                                <span class="lobby-name"><b>Tourney 4 fun</b></span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12">
-                                                <span class="lobby-rank"><i class="fa fa-shield"></i> 1365</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-2">
-                                        <span class="lobby-p-count">45/64</span>
-                                    </div>
-                                </div>
-                                    <div id="info2" class="collapse">
-                                        <div class="row ssm-content-box player-names center">
-                                            <h1 class="ssm-content-box-title">
-                                                <span>Players</span>
-                                            </h1>
-                                            <div class="col-xs-12 col-sm-6">
-                                                <div>
-                                                   <h5><b>jocamar</b></h5>
-                                                   <h6>Rank: 1345 - EU</h6>
-                                                </div>
-                                                <div class="player-info">
-                                                   <h5><b>xxXSmasher360Xxx</b></h5>
-                                                   <h6>Rank: 1345 - EU</h6>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6">
-                                                <div>
-                                                   <h5><b>Open</b></h5>
-                                                   <h6>Rank: --</h6>
-                                                </div>
-                                                <div class="player-info">
-                                                   <h5><b>Open</b></h5>
-                                                   <h6>Rank: --</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row ssm-content-box lobby-settings center">
-                                            <h1 class="ssm-content-box-title">
-                                                <span>Settings</span>
-                                            </h1>
-                                            <div class="col-xs-12">
-                                                <div>
-                                                   <h5>Type: Single Event</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Style: Elimination</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Win Condition: Stock</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Stock Limit: 5</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Items Allowed: Yes</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Friendly Fire: Active</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Custom Chars Allowed: Yes</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <div class="row">
-                                    <div class="col-xs-8">
-                                        <button class="wisteria-flat-button join-btn">Join</button>
-                                        <button class="wisteria-flat-button subscribe-btn">Subscribe</button>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <div class="more-info">
-                                            <a id="toggle2" data-toggle="collapse" data-target="#info2">
-                                                <span id="upi2" class="glyphicon glyphicon-menu-down"></span>
-                                                <span id="upt2">More Info</span>
-                                                <span id="downi2" class="glyphicon glyphicon-menu-up hidden"></span>
-                                                <span id="downt2" class="hidden">Less Info</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                </div>
-                
-                <!-- /.row -->
-            </div>
-            
-            <div class="create-lobby">
-                    <button class="wisteria-flat-button center middle">Organize Tourney</button>
-            </div>
-            <!-- /.container-fluid -->
-        </div>
-</div>
 
-<!-- In Progress Tab -->
-<div role="tabpanel" class="tab-pane" id="inprogress">
-    
-    <div id="content-wrapper" class="lobby-list">
-
-            <div class="container-fluid">
-
-                <!-- Page Heading -->
-                
-                <div class="row last-row">
-                        <div class="col-lg-6 col-xs-12 entry-border bg-white">
-                            <div class="lobby-entry">
-                                <div class="row">
-                                    <span class="lobby-type">Periodic</span>
-                                    <span class="lobby-host">Organizer: jocamar</span>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-2">
-                                        <img class="map-preview center" src="img/trophee.ico"></img>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <div class="row name-rank">
-                                            <div class="col-xs-12">
-                                                <span class="lobby-name"><b>Tourney 4 fun</b></span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12">
-                                                <span class="lobby-rank"><i class="fa fa-shield"></i> 1365</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-2">
-                                        <span class="lobby-p-count">45/64</span>
-                                    </div>
-                                </div>
-                                    <div id="info3" class="collapse">
-                                        <div class="row ssm-content-box player-names center">
-                                            <h1 class="ssm-content-box-title">
-                                                <span>Players</span>
-                                            </h1>
-                                            <div class="col-xs-12 col-sm-6">
-                                                <div>
-                                                   <h5><b>jocamar</b></h5>
-                                                   <h6>Rank: 1345 - EU</h6>
-                                                </div>
-                                                <div class="player-info">
-                                                   <h5><b>xxXSmasher360Xxx</b></h5>
-                                                   <h6>Rank: 1345 - EU</h6>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6">
-                                                <div>
-                                                   <h5><b>Open</b></h5>
-                                                   <h6>Rank: --</h6>
-                                                </div>
-                                                <div class="player-info">
-                                                   <h5><b>Open</b></h5>
-                                                   <h6>Rank: --</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row ssm-content-box lobby-settings center">
-                                            <h1 class="ssm-content-box-title">
-                                                <span>Settings</span>
-                                            </h1>
-                                            <div class="col-xs-12">
-                                                <div>
-                                                   <h5>Type: Periodic</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Style: Round Robin</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Win Condition: Stock</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Stock Limit: 5</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Items Allowed: Yes</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Friendly Fire: Active</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Custom Chars Allowed: Yes</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <div class="row">
-                                    <div class="col-xs-8">
-                                        <button class="wisteria-flat-button join-btn">Enter Room</button>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <div class="more-info">
-                                            <a id="toggle3" data-toggle="collapse" data-target="#info3">
-                                                <span id="upi3" class="glyphicon glyphicon-menu-down"></span>
-                                                <span id="upt3">More Info</span>
-                                                <span id="downi3" class="glyphicon glyphicon-menu-up hidden"></span>
-                                                <span id="downt3" class="hidden">Less Info</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                </div>
-                
-                
-                <!-- /.row -->
+                <!-- /.container-fluid -->
             </div>
-            
-            <div class="create-lobby">
-                    <button class="wisteria-flat-button center middle">Organize Tourney</button>
-            </div>
-            <!-- /.container-fluid -->
-        </div>
-    
-    
-</div>
-<!-- My Tourneys Tab -->
-<div role="tabpanel" class="tab-pane" id="mytourneys">
-     <div id="content-wrapper" class="lobby-list">
 
-            <div class="container-fluid">
 
-                <!-- Page Heading -->
-                <div class="row last-row">
-                        <div class="col-lg-6 col-xs-12 entry-border bg-white">
-                            <div class="lobby-entry">
-                                <div class="row">
-                                    <span class="lobby-type">Single Event</span>
-                                    <span class="lobby-host">Organizer: jocamar</span>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-2">
-                                        <img class="map-preview center" src="img/trophee.ico"></img>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <div class="row name-rank">
-                                            <div class="col-xs-12">
-                                                <span class="lobby-name"><b>Tourney 4 fun</b></span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12">
-                                                <span class="lobby-rank"><i class="fa fa-shield"></i> 1365</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-2">
-                                        <span class="lobby-p-count">45/64</span>
-                                    </div>
-                                </div>
-                                    <div id="info5" class="collapse">
-                                        <div class="row ssm-content-box player-names center">
-                                            <h1 class="ssm-content-box-title">
-                                                <span>Players</span>
-                                            </h1>
-                                            <div class="col-xs-12 col-sm-6">
-                                                <div>
-                                                   <h5><b>jocamar</b></h5>
-                                                   <h6>Rank: 1345 - EU</h6>
-                                                </div>
-                                                <div class="player-info">
-                                                   <h5><b>xxXSmasher360Xxx</b></h5>
-                                                   <h6>Rank: 1345 - EU</h6>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6">
-                                                <div>
-                                                   <h5><b>Open</b></h5>
-                                                   <h6>Rank: --</h6>
-                                                </div>
-                                                <div class="player-info">
-                                                   <h5><b>Open</b></h5>
-                                                   <h6>Rank: --</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row ssm-content-box lobby-settings center">
-                                            <h1 class="ssm-content-box-title">
-                                                <span>Settings</span>
-                                            </h1>
-                                            <div class="col-xs-12">
-                                                <div>
-                                                   <h5>Type: Single Event</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Style: Elimination</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Win Condition: Stock</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Stock Limit: 5</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Items Allowed: Yes</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Friendly Fire: Active</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Custom Chars Allowed: Yes</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <div class="row">
-                                    <div class="col-xs-8">
-                                        <button class="wisteria-flat-button join-btn">Quit</button>
-                                        <button class="wisteria-flat-button subscribe-btn">Unsubscribe</button>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <div class="more-info">
-                                            <a id="toggle5" data-toggle="collapse" data-target="#info5">
-                                                <span id="upi5" class="glyphicon glyphicon-menu-down"></span>
-                                                <span id="upt5">More Info</span>
-                                                <span id="downi5" class="glyphicon glyphicon-menu-up hidden"></span>
-                                                <span id="downt5" class="hidden">Less Info</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-6 col-xs-12 entry-border bg-white">
-                            <div class="lobby-entry">
-                                <div class="row">
-                                    <span class="lobby-type">Periodic</span>
-                                    <span class="lobby-host">Organizer: jocamar</span>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-2">
-                                        <img class="map-preview center" src="img/trophee.ico"></img>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <div class="row name-rank">
-                                            <div class="col-xs-12">
-                                                <span class="lobby-name"><b>Tourney 4 fun</b></span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12">
-                                                <span class="lobby-rank"><i class="fa fa-shield"></i> 1365</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-2">
-                                        <span class="lobby-p-count">45/64</span>
-                                    </div>
-                                </div>
-                                    <div id="info4" class="collapse">
-                                        <div class="row ssm-content-box player-names center">
-                                            <h1 class="ssm-content-box-title">
-                                                <span>Players</span>
-                                            </h1>
-                                            <div class="col-xs-12 col-sm-6">
-                                                <div>
-                                                   <h5><b>jocamar</b></h5>
-                                                   <h6>Rank: 1345 - EU</h6>
-                                                </div>
-                                                <div class="player-info">
-                                                   <h5><b>xxXSmasher360Xxx</b></h5>
-                                                   <h6>Rank: 1345 - EU</h6>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6">
-                                                <div>
-                                                   <h5><b>Open</b></h5>
-                                                   <h6>Rank: --</h6>
-                                                </div>
-                                                <div class="player-info">
-                                                   <h5><b>Open</b></h5>
-                                                   <h6>Rank: --</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row ssm-content-box lobby-settings center">
-                                            <h1 class="ssm-content-box-title">
-                                                <span>Settings</span>
-                                            </h1>
-                                            <div class="col-xs-12">
-                                                <div>
-                                                   <h5>Type: Periodic</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Style: Round Robin</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Win Condition: Stock</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Stock Limit: 5</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Items Allowed: Yes</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Friendly Fire: Active</h5>
-                                                </div>
-                                                <div class="match-setting">
-                                                   <h5>Custom Chars Allowed: Yes</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <div class="row">
-                                    <div class="col-xs-8">
-                                        <button class="wisteria-flat-button join-btn">Manage</button>
-                                    </div>
-                                    <div class="col-xs-4">
-                                        <div class="more-info">
-                                            <a id="toggle4" data-toggle="collapse" data-target="#info4">
-                                                <span id="upi4" class="glyphicon glyphicon-menu-down"></span>
-                                                <span id="upt4">More Info</span>
-                                                <span id="downi4" class="glyphicon glyphicon-menu-up hidden"></span>
-                                                <span id="downt4" class="hidden">Less Info</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                </div>
-                
-                <!-- /.row -->
-            </div>
-            
-            <div class="create-lobby">
-                    <button class="wisteria-flat-button center middle">Organize Tourney</button>
-            </div>
-            <!-- /.container-fluid -->
-        </div>
-</div>
-
-</div>
-        <!-- /#page-content-wrapper -->
-</div>
     </div>
-    <!-- /#wrapper -->
+    <!-- My Tourneys Tab -->
+    <div role="tabpanel" class="tab-pane" id="mytourneys">
+         <div id="content-wrapper" class="lobby-list">
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+                <div class="container-fluid">
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    
-    <!-- Menu Toggle Script -->
-    <script>
-    var wrapper = $("#wrapper");
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        wrapper.toggleClass("toggled");
-        
-        if($('#content-wrapper').width() != $(window).width()) {
-            console.log(4*$(window).width());
-            $('.create-lobby').width(4*$(window).width());
-        };
-    });
-    
-    var wWidth = wrapper.width();
-    wrapper.on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
-                function(e) {
-                    if(Math.abs(wWidth - wrapper.width()) > 20) {
-                        console.log("w: " + wWidth + " cw: " + wrapper.width() + " ww: " + $(window).width() + " cww: " + $('#content-wrapper').width());
-                        $('.create-lobby').width(3*$(window).width()+wrapper.width());
-                        console.log(3*$(window).width()+wrapper.width());
-                    }
-                        
-                    wWidth = wrapper.width();
-            });
-    
-    $('.create-lobby').width(3*$(window).width()+$('#content-wrapper').width());
-    
-    $(window).resize(function() {
-        if(!wrapper.hasClass("toggled"))
-            $('.create-lobby').width(3*$(window).width() + $('#content-wrapper').width());
-        else $('.create-lobby').width(4*$(window).width());
-            
-    });
-    
-    $("#toggle1").click(function(e) {
-        e.preventDefault();
-        $("#upi1").toggleClass("hidden");
-        $("#upt1").toggleClass("hidden");
-        $("#downi1").toggleClass("hidden");
-        $("#downt1").toggleClass("hidden");
-    });
-    
-    $("#toggle2").click(function(e) {
-        e.preventDefault();
-        $("#upi2").toggleClass("hidden");
-        $("#upt2").toggleClass("hidden");
-        $("#downi2").toggleClass("hidden");
-        $("#downt2").toggleClass("hidden");
-    });
-    
-    $("#toggle3").click(function(e) {
-        e.preventDefault();
-        $("#upi3").toggleClass("hidden");
-        $("#upt3").toggleClass("hidden");
-        $("#downi3").toggleClass("hidden");
-        $("#downt3").toggleClass("hidden");
-    });
-    
-    $("#toggle4").click(function(e) {
-        e.preventDefault();
-        $("#upi4").toggleClass("hidden");
-        $("#upt4").toggleClass("hidden");
-        $("#downi4").toggleClass("hidden");
-        $("#downt4").toggleClass("hidden");
-    });
-    
-    $("#toggle5").click(function(e) {
-        e.preventDefault();
-        $("#upi5").toggleClass("hidden");
-        $("#upt5").toggleClass("hidden");
-        $("#downi5").toggleClass("hidden");
-        $("#downt5").toggleClass("hidden");
-    });
-    </script>
+                    <!-- Page Heading -->
+                    <div class="row last-row">
+                            <div class="col-lg-6 col-xs-12 entry-border bg-white">
+                                <div class="lobby-entry">
+                                    <div class="row">
+                                        <span class="lobby-type">Single Event</span>
+                                        <span class="lobby-host">Organizer: jocamar</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-2">
+                                            <img class="map-preview center" src="img/trophee.ico"></img>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="row name-rank">
+                                                <div class="col-xs-12">
+                                                    <span class="lobby-name"><b>Tourney 4 fun</b></span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <span class="lobby-rank"><i class="fa fa-shield"></i> 1365</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="lobby-p-count">45/64</span>
+                                        </div>
+                                    </div>
+                                        <div id="info5" class="collapse">
+                                            <div class="row ssm-content-box player-names center">
+                                                <h1 class="ssm-content-box-title">
+                                                    <span>Players</span>
+                                                </h1>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <div>
+                                                       <h5><b>jocamar</b></h5>
+                                                       <h6>Rank: 1345 - EU</h6>
+                                                    </div>
+                                                    <div class="player-info">
+                                                       <h5><b>xxXSmasher360Xxx</b></h5>
+                                                       <h6>Rank: 1345 - EU</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <div>
+                                                       <h5><b>Open</b></h5>
+                                                       <h6>Rank: --</h6>
+                                                    </div>
+                                                    <div class="player-info">
+                                                       <h5><b>Open</b></h5>
+                                                       <h6>Rank: --</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row ssm-content-box lobby-settings center">
+                                                <h1 class="ssm-content-box-title">
+                                                    <span>Settings</span>
+                                                </h1>
+                                                <div class="col-xs-12">
+                                                    <div>
+                                                       <h5>Type: Single Event</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Style: Elimination</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Win Condition: Stock</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Stock Limit: 5</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Items Allowed: Yes</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Friendly Fire: Active</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Custom Chars Allowed: Yes</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="row">
+                                        <div class="col-xs-8">
+                                            <button class="wisteria-flat-button join-btn">Quit</button>
+                                            <button class="wisteria-flat-button subscribe-btn">Unsubscribe</button>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="more-info">
+                                                <a id="toggle5" data-toggle="collapse" data-target="#info5">
+                                                    <span id="upi5" class="glyphicon glyphicon-menu-down"></span>
+                                                    <span id="upt5">More Info</span>
+                                                    <span id="downi5" class="glyphicon glyphicon-menu-up hidden"></span>
+                                                    <span id="downt5" class="hidden">Less Info</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-</body>
+                            </div>
+                            <div class="col-lg-6 col-xs-12 entry-border bg-white">
+                                <div class="lobby-entry">
+                                    <div class="row">
+                                        <span class="lobby-type">Periodic</span>
+                                        <span class="lobby-host">Organizer: jocamar</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-2">
+                                            <img class="map-preview center" src="img/trophee.ico"></img>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="row name-rank">
+                                                <div class="col-xs-12">
+                                                    <span class="lobby-name"><b>Tourney 4 fun</b></span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <span class="lobby-rank"><i class="fa fa-shield"></i> 1365</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="lobby-p-count">45/64</span>
+                                        </div>
+                                    </div>
+                                        <div id="info4" class="collapse">
+                                            <div class="row ssm-content-box player-names center">
+                                                <h1 class="ssm-content-box-title">
+                                                    <span>Players</span>
+                                                </h1>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <div>
+                                                       <h5><b>jocamar</b></h5>
+                                                       <h6>Rank: 1345 - EU</h6>
+                                                    </div>
+                                                    <div class="player-info">
+                                                       <h5><b>xxXSmasher360Xxx</b></h5>
+                                                       <h6>Rank: 1345 - EU</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <div>
+                                                       <h5><b>Open</b></h5>
+                                                       <h6>Rank: --</h6>
+                                                    </div>
+                                                    <div class="player-info">
+                                                       <h5><b>Open</b></h5>
+                                                       <h6>Rank: --</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row ssm-content-box lobby-settings center">
+                                                <h1 class="ssm-content-box-title">
+                                                    <span>Settings</span>
+                                                </h1>
+                                                <div class="col-xs-12">
+                                                    <div>
+                                                       <h5>Type: Periodic</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Style: Round Robin</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Win Condition: Stock</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Stock Limit: 5</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Items Allowed: Yes</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Friendly Fire: Active</h5>
+                                                    </div>
+                                                    <div class="match-setting">
+                                                       <h5>Custom Chars Allowed: Yes</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="row">
+                                        <div class="col-xs-8">
+                                            <button class="wisteria-flat-button join-btn">Manage</button>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="more-info">
+                                                <a id="toggle4" data-toggle="collapse" data-target="#info4">
+                                                    <span id="upi4" class="glyphicon glyphicon-menu-down"></span>
+                                                    <span id="upt4">More Info</span>
+                                                    <span id="downi4" class="glyphicon glyphicon-menu-up hidden"></span>
+                                                    <span id="downt4" class="hidden">Less Info</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-</html>
+                            </div>
+                    </div>
+
+                    <!-- /.row -->
+                </div>
+
+
+                <!-- /.container-fluid -->
+            </div>
+    </div>
+
+    
+            <!-- /#page-content-wrapper -->
+    </div>
+
+    </div>
+
+<div class="create-lobby">
+    <button class="wisteria-flat-button center middle" onclick="location.href='tourney-creation.html'">Organize Tourney</button>
+
+    </div>
+</div>
+
+        <!-- /#wrapper -->
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Menu Toggle Script -->
+        <script>
+        var wrapper = $("#wrapper");
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            wrapper.toggleClass("toggled");
+
+            if($('#content-wrapper').width() != $(window).width()) {
+                console.log(4*$(window).width());
+                $('.create-lobby').width(4*$(window).width());
+            };
+        });
+
+        var wWidth = wrapper.width();
+        wrapper.on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',   
+                    function(e) {
+                        if(Math.abs(wWidth - wrapper.width()) > 20) {
+                            console.log("w: " + wWidth + " cw: " + wrapper.width() + " ww: " + $(window).width() + " cww: " + $('#content-wrapper').width());
+                            $('.create-lobby').width(3*$(window).width()+wrapper.width());
+                            console.log(3*$(window).width()+wrapper.width());
+                        }
+
+                        wWidth = wrapper.width();
+                });
+
+        $('.create-lobby').width(3*$(window).width()+$('#content-wrapper').width());
+
+        $(window).resize(function() {
+            if(!wrapper.hasClass("toggled"))
+                $('.create-lobby').width(3*$(window).width() + $('#content-wrapper').width());
+            else $('.create-lobby').width(4*$(window).width());
+
+        });
+
+        $("#toggle1").click(function(e) {
+            e.preventDefault();
+            $("#upi1").toggleClass("hidden");
+            $("#upt1").toggleClass("hidden");
+            $("#downi1").toggleClass("hidden");
+            $("#downt1").toggleClass("hidden");
+        });
+
+        $("#toggle2").click(function(e) {
+            e.preventDefault();
+            $("#upi2").toggleClass("hidden");
+            $("#upt2").toggleClass("hidden");
+            $("#downi2").toggleClass("hidden");
+            $("#downt2").toggleClass("hidden");
+        });
+
+        $("#toggle3").click(function(e) {
+            e.preventDefault();
+            $("#upi3").toggleClass("hidden");
+            $("#upt3").toggleClass("hidden");
+            $("#downi3").toggleClass("hidden");
+            $("#downt3").toggleClass("hidden");
+        });
+
+        $("#toggle4").click(function(e) {
+            e.preventDefault();
+            $("#upi4").toggleClass("hidden");
+            $("#upt4").toggleClass("hidden");
+            $("#downi4").toggleClass("hidden");
+            $("#downt4").toggleClass("hidden");
+        });
+
+        $("#toggle5").click(function(e) {
+            e.preventDefault();
+            $("#upi5").toggleClass("hidden");
+            $("#upt5").toggleClass("hidden");
+            $("#downi5").toggleClass("hidden");
+            $("#downt5").toggleClass("hidden");
+        });
+        </script>
+
+    </body>
+
+    </html>

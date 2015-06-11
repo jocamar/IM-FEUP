@@ -130,7 +130,7 @@
                     <a href="#"><span class="glyphicon glyphicon-list"></span> Lobby List</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-trophy fa-lg"></i> Tournament List</a>
+                    <a href="tourney-list.html"><i class="fa fa-trophy fa-lg"></i> Tournament List</a>
                 </li>
                 <li>
                     <a href="javascript:;" data-toggle="collapse" data-target="#notifications"><span class="glyphicon glyphicon-envelope"></span> Notifications(2)</a>
@@ -138,19 +138,19 @@
                         <li>
                             <a class="notification-msg">Match Invite By Alastrina
                                 <button class="wisteria-flat-button unfriend-btn">Dismiss</button>
-                                <button class="wisteria-flat-button f-right">Accept</button>
+                                <button class="wisteria-flat-button f-right" onclick="location.href='lobby-host.html'">Accept</button>
                             </a>
                         </li>
                         <li>
                             <a class="notification-msg">Friend Invite By Popeye21
                                 <button class="wisteria-flat-button unfriend-btn">Dismiss</button>
-                                <button class="wisteria-flat-button f-right">Accept</button>
+                                <button class="wisteria-flat-button f-right" onclick="location.href='lobby-host.html'">Accept</button>
                             </a>
                         </li>
                         <li>
                             <a class="notification-msg">'Noobs Tourney' has started
                                 <button class="wisteria-flat-button unfriend-btn">Dismiss</button>
-                                <button class="wisteria-flat-button f-right">Join</button>
+                                <button class="wisteria-flat-button f-right" onclick="location.href='tourney-lobby.html'"> Join </button>
                             </a>
                         </li>
                     </ul>
@@ -263,8 +263,8 @@
             
             <div class="create-lobby">
                 <span class="create-lobby-actions center middle">
-                        <button class="wisteria-flat-button footer-btn">Host</button>
-                        <button class="wisteria-flat-button footer-btn">Cancel</button>
+                        <button class="wisteria-flat-button footer-btn" onclick="location.href='lobby-host.html'">Host</button>
+                        <button class="wisteria-flat-button footer-btn" onclick="location.href='lobby-list.html'">Cancel</button>
                 </span>
             </div>
             <!-- /.container-fluid -->

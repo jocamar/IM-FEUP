@@ -125,20 +125,20 @@
                     <ul id="notifications" class="collapse">
                         <li>
                             <a class="notification-msg">Match Invite By Alastrina
-                                <button class="btn btn-default unfriend-btn">Dismiss</button>
-                                <button class="btn btn-default f-right">Accept</button>
+                                <button class="wisteria-flat-button unfriend-btn">Dismiss</button>
+                                <button class="wisteria-flat-button f-right" onclick="location.href='lobby-host.html'">Accept</button>
                             </a>
                         </li>
                         <li>
                             <a class="notification-msg">Friend Invite By Popeye21
-                                <button class="btn btn-default unfriend-btn">Dismiss</button>
-                                <button class="btn btn-default f-right">Accept</button>
+                                <button class="wisteria-flat-button unfriend-btn">Dismiss</button>
+                                <button class="wisteria-flat-button f-right" onclick="location.href='lobby-host.html'">Accept</button>
                             </a>
                         </li>
                         <li>
                             <a class="notification-msg">'Noobs Tourney' has started
-                                <button class="btn btn-default unfriend-btn">Dismiss</button>
-                                <button class="btn btn-default f-right">Join</button>
+                                <button class="wisteria-flat-button unfriend-btn">Dismiss</button>
+                                <button class="wisteria-flat-button f-right" onclick="location.href='tourney-lobby.html'"> Join </button>
                             </a>
                         </li>
                     </ul>
@@ -147,7 +147,7 @@
                     <a href="#"><i class="fa fa-gear fa-lg"></i> Edit Match Settings</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-times-circle fa-lg"></i> Cancel Lobby</a>
+                    <a href="tourney-list.html"><i class="fa fa-times-circle fa-lg"></i> Cancel Lobby</a>
                 </li>
                 <li>
                     <a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a>
@@ -325,15 +325,50 @@
             
             <div class="create-lobby">
                 <span class="create-lobby-actions center middle">
-                        <button class="btn btn-default footer-btn">Start Match</button>
+                        <button class="btn btn-default footer-btn" data-toggle="modal" data-target="#myModal">Start Match</button>
+                    <a href="tourney-list.html">
                         <button class="btn btn-default footer-btn">Cancel Lobby</button>
+                        </a>
                 </span>
             </div>
             <!-- /.container-fluid -->
         </div>
         <!-- /#page-content-wrapper -->
+<!-- Modal content-->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Game Starting!</h4>
+      </div>
+      <div class="modal-body">
+        <p>To start the game, use the following codes to add the players</p>
+          <div class="container-fluid" style="border-style: solid;">
+              <p>0791-4550-0614</p>
+              <p>Nintendo Acc. Name: Don Lawride</p>
 
+          </div>
+          <div class="container-fluid" style="border-style: solid;">
+              <p>0791-4550-0614</p>
+              <p>Nintendo Acc. Name: Don Lawride</p>
+          </div>
+          <div class="container-fluid" style="border-style: solid;">
+              <p>0791-4550-0614</p>
+              <p>Nintendo Acc. Name: Don Lawride</p>
+          </div>
+          <div class="container-fluid" 	style="border-style: solid;">
+              <p>0791-4550-0614</p>
+              <p>Nintendo Acc. Name: Don Lawride</p>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
     </div>
+</div>
+    </div>
+
+
     <!-- /#wrapper -->
 
     <!-- jQuery -->
