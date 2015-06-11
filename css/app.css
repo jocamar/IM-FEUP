@@ -1,3 +1,8 @@
+@font-face {
+    font-family: smashFont;
+    src: url(../img/smash-font.ttf);
+}
+
 ul {
 	list-style-type: none;
 }
@@ -95,7 +100,7 @@ a {
 }
 
 .login-form {
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 
 .login-form > input {
@@ -108,7 +113,7 @@ a {
 }
 
 .register-btn {
-	margin-top: 30px;
+	margin-top: 15px;
 }
 
 .side-menu {
@@ -127,7 +132,8 @@ a {
 
 .page-title {
 	color: white;
-	font-size: 14pt;
+	font-size: 12pt;
+	font-family: smashFont;
 }
 
 .header-bar {
@@ -401,11 +407,52 @@ a {
 .nav-tabs li a {
 	color: white;
 }
+
+
+.login-page {
+	max-width: 40%;
+}
+
+.logo {
+	max-width: 200px; 
+	width: 20vw; 
+	height: auto;
+}
+
+.super-smash {
+	font-size: 2.2vw; 
+	font-family: smashFont; 
+	margin-bottom: -10px; 
+	text-align: center;
+}
+
+.matcher {
+	font-size: 3.5vw; 
+	font-family: smashFont; 
+	margin-bottom: -20px; 
+	text-align: center;
+}
 	
 @media(max-width:872px) {
+	.logo {
+		width: 40vw; 
+	}
+	
+	.login-page {
+		max-width: 100%;
+		width: 100%;
+	}
 	
 	.join-btn {
 		margin-right: 5%;
+	}
+	
+	.super-smash {
+		font-size: 5vw; 
+	}
+	
+	.matcher {
+		font-size: 8vw; 
 	}
 }
 
@@ -421,6 +468,7 @@ a {
 }
 
 @media(max-width:405px) {
+	
 	.more-info {
 		margin-top: 70px;
 	}
