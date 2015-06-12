@@ -21,7 +21,6 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,7 +46,7 @@
                 </div>
             </div>
             <span class="center text-center page-title middle max-w-80">
-                In Tournament Lobby
+                Waiting for host...
             </span>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -67,31 +66,37 @@
                         <li>
                             <a class="friend-name">Nanner <img src="img/online.png"></img>
                                 <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
+                                <button class="wisteria-flat-button f-right"> Invite </button>
                             </a>
                         </li>
                         <li>
                             <a class="friend-name">Alastrina <img src="img/online.png"></img>
                                 <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
+                                <button class="wisteria-flat-button f-right"> Invite </button>
                             </a>
                         </li>
                         <li>
                             <a class="friend-name">Don Lawride <img src="img/online.png"></img>
                                 <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
+                                <button class="wisteria-flat-button f-right"> Invite </button>
                             </a>
                         </li>
                         <li>
                             <a class="friend-name">Zeroing <img src="img/offline.png"></img>
                                 <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
+                                <button class="wisteria-flat-button f-right"> Invite </button>
                             </a>
                         </li>
                         <li>
                             <a class="friend-name">DevM <img src="img/offline.png"></img>
                                 <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
+                                <button class="wisteria-flat-button f-right"> Invite </button>
                             </a>
                         </li>
                         <li>
                             <a class="friend-name">Pitt <img src="img/offline.png"></img>
                                 <button class="wisteria-flat-button unfriend-btn">Unfriend</button>
+                                <button class="wisteria-flat-button f-right"> Invite </button>
                             </a>
                         </li>
                     </ul>
@@ -145,10 +150,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-gear fa-lg"></i> Edit Match Settings</a>
-                </li>
-                <li>
-                    <a href="tourney-list.html"><i class="fa fa-times-circle fa-lg"></i> Cancel Lobby</a>
+                    <a href="lobby-list.html"><i class="fa fa-times-circle fa-lg"></i> Exit Lobby</aexit>
                 </li>
                 <li>
                     <a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a>
@@ -166,17 +168,17 @@
                         <div class="col-lg-12">
                             <div class="lobby-entry">
                                 <div class="row">
-                                    <span class="lobby-type">Periodic</span>
-                                    <span class="lobby-host">Organizer: jocamar</span>
+                                    <span class="lobby-type">Team Battle</span>
+                                    <span class="lobby-host">Host: jocamar</span>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-2">
-                                        <img class="map-preview center" src="img/trophee.ico"></img>
+                                        <img class="map-preview center" src="img/map.jpg"></img>
                                     </div>
                                     <div class="col-xs-8">
                                         <div class="row name-rank">
                                             <div class="col-xs-12">
-                                                <span class="lobby-name"><b>Tourney 4 fun</b></span>
+                                                <span class="lobby-name"><b>lobby name here</b></span>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -191,36 +193,14 @@
                                         </div>
                                     </div>
                                     <div class="col-xs-2">
-                                        <span class="lobby-p-count">2/8</span>
+                                        <span class="lobby-p-count">2/4</span>
                                     </div>
                                 </div>
-                                
-                                <div class="row ssm-content-box player-names-lobby center">
-                                    <h1 class="ssm-content-box-title">
-                                        <span>Settings</span>
-                                    </h1>
+                                <div class="row">
                                     <div class="col-xs-12">
-                                        <div>
-                                           <h5>Periodicity: Monthly</h5>
-                                        </div>
-                                        <div class="match-setting">
-                                           <h5>Next Event Date: 24-06-2016</h5>
-                                        </div>
-                                        <div class="match-setting">
-                                           <h5>Hour: 16:30</h5>
-                                        </div>
-                                        <div class="match-setting">
-                                           <h5>Stock Limit: 5</h5>
-                                        </div>
-                                        <div class="match-setting">
-                                           <h5>Items Allowed: Yes</h5>
-                                        </div>
-                                        <div class="match-setting">
-                                           <h5>Friendly Fire: Active</h5>
-                                        </div>
+                                        <button style="margin-top: 10px" class="wisteria-flat-button center">Invite Friends</button>
                                     </div>
                                 </div>
-                                
                                 <div class="row ssm-content-box player-names-lobby center">
                                     <h1 class="ssm-content-box-title">
                                         <span>Players</span>
@@ -235,6 +215,10 @@
                                                    </div>
                                                    <div class="col-xs-5">
                                                        <span class="f-right team-select">
+                                                            <select class="selectpicker">
+                                                                <option>Team 1</option>
+                                                                <option>Team 2</option>
+                                                            </select>
                                                        </span>
                                                    </div>
                                                 </div>
@@ -253,6 +237,10 @@
                                                    </div>
                                                    <div class="col-xs-5">
                                                        <span class="f-right team-select">
+                                                            <select class="selectpicker">
+                                                                <option>Team 1</option>
+                                                                <option>Team 2</option>
+                                                            </select>
                                                        </span>
                                                    </div>
                                                 </div>
@@ -280,66 +268,6 @@
                                                 </div>
                                            </div>
                                         </div>
-                                        <div class="row lobby-player">
-                                            <div class="col-xs-12">
-                                                <div class="row">
-                                                    <div class="col-xs-7">
-                                                       <h5><b>Open</b></h5>
-                                                       <h6>Rank: --</h6>
-                                                    </div>
-                                                    <div class="col-xs-5">
-                                                    </div>
-                                                </div>
-                                                <div class="row lobby-player-actions">
-                                                   <button class="wisteria-flat-button player-actions-btn"><i class="fa fa-lock fa-lg"></i> Lock</button>
-                                                </div>
-                                           </div>
-                                        </div>
-                                        <div class="row lobby-player">
-                                            <div class="col-xs-12">
-                                                <div class="row">
-                                                    <div class="col-xs-7">
-                                                       <h5><b>Open</b></h5>
-                                                       <h6>Rank: --</h6>
-                                                    </div>
-                                                    <div class="col-xs-5">
-                                                    </div>
-                                                </div>
-                                                <div class="row lobby-player-actions">
-                                                   <button class="wisteria-flat-button player-actions-btn"><i class="fa fa-lock fa-lg"></i> Lock</button>
-                                                </div>
-                                           </div>
-                                        </div>
-                                        <div class="row lobby-player">
-                                            <div class="col-xs-12">
-                                                <div class="row">
-                                                    <div class="col-xs-7">
-                                                       <h5><b>Open</b></h5>
-                                                       <h6>Rank: --</h6>
-                                                    </div>
-                                                    <div class="col-xs-5">
-                                                    </div>
-                                                </div>
-                                                <div class="row lobby-player-actions">
-                                                   <button class="wisteria-flat-button player-actions-btn"><i class="fa fa-lock fa-lg"></i> Lock</button>
-                                                </div>
-                                           </div>
-                                        </div>
-                                        <div class="row lobby-player">
-                                            <div class="col-xs-12">
-                                                <div class="row">
-                                                    <div class="col-xs-7">
-                                                       <h5><b>Open</b></h5>
-                                                       <h6>Rank: --</h6>
-                                                    </div>
-                                                    <div class="col-xs-5">
-                                                    </div>
-                                                </div>
-                                                <div class="row lobby-player-actions">
-                                                   <button class="wisteria-flat-button player-actions-btn"><i class="fa fa-lock fa-lg"></i> Lock</button>
-                                                </div>
-                                           </div>
-                                        </div>
                                         <div class="row">
                                             <div class="col-xs-12">
                                                 <div class="row">
@@ -357,15 +285,31 @@
                                         </div>
                                     </div>
                                 </div>
-                                
                                 <div class="row ssm-content-box player-names-lobby center">
                                     <h1 class="ssm-content-box-title">
-                                        <span>Brackets</span>
+                                        <span>Settings</span>
                                     </h1>
-                                    <div id="bracket" class="scrollable-content">
-                                        <div class="jQBracket lr">
-                                            <div class="bracket">
-                                            </div>
+                                    <div class="col-xs-12">
+                                        <div>
+                                           <h5>Stage: Final Destination</h5>
+                                        </div>
+                                        <div class="match-setting">
+                                           <h5>Game Mode: Team Battle</h5>
+                                        </div>
+                                        <div class="match-setting">
+                                           <h5>Win Condition: Stock</h5>
+                                        </div>
+                                        <div class="match-setting">
+                                           <h5>Stock Limit: 5</h5>
+                                        </div>
+                                        <div class="match-setting">
+                                           <h5>Items Allowed: Yes</h5>
+                                        </div>
+                                        <div class="match-setting">
+                                           <h5>Friendly Fire: Active</h5>
+                                        </div>
+                                        <div class="match-setting">
+                                           <h5>Custom Chars Allowed: Yes</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -397,21 +341,41 @@
             </div>
             
             <div class="create-lobby">
-                <button class="wisteria-flat-button center middle" onclick="location.href='tourney-list.html'">Exit Lobby</button>
+                <span class="create-lobby-actions center middle">
+                    <a href="lobby-list.html">
+                        <button class="wisteria-flat-button footer-btn">Exit Lobby</button>
+                    </a>
+                </span>
             </div>
             <!-- /.container-fluid -->
         </div>
         <!-- /#page-content-wrapper -->
+        
     </div>
-
-
     <!-- /#wrapper -->
 
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-center" >Game Starting!</h4>
+          </div>
+          <div class="modal-body">
+            <p>To start the game, use the following codes to add the host:</p>
+              <div class="container-fluid" style="border-width: 1px 1px 0px 1px; border-style: solid;">
+                  <h4 class="text-center">0791-4550-0614</h4>
+                  <p class="text-center">Nintendo Acc. Name: Don Lawride</p>
+              </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    
-    <script type="text/javascript" src="js/jquery.bracket.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/jquery.bracket.min.css" />
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -446,27 +410,8 @@
         if(!wrapper.hasClass("toggled"))
             $('.create-lobby').width(3*$(window).width() + $('#content-wrapper').width());
         else $('.create-lobby').width(4*$(window).width());
-            
+        console.log("hi2");
     });
-    
-    
-    var minimalData = {
-        teams : [
-          ["jocamar", "xxXSmasher360Xxx"], /* first matchup */
-          ["open", "open"],  /* second matchup */
-          ["open", "open"],  /* second matchup */
-          ["open", "open"]  /* second matchup */
-        ],
-        results : [
-          [[,], [,]]        /* second round */
-        ]
-    }
-     
-    $(function() {
-        console.log("hello");
-        $('#bracket').bracket({
-          init: minimalData /* data to initialize the bracket with */ })
-    })
     </script>
 
 </body>
